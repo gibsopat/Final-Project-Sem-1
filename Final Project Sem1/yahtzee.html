@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" href="dice.ico">
+    <script src="script.js"></script>
+    <title>Unnamed Dice Game</title>
+</head>
+<body>
+    <div id = "menu">
+        <button onclick = "menuBar()" class = "menuOpener">M<br>e<br>n<br>u</button>
+        <div class = "storer" style = "background-color: black; opacity: 75%">
+        <br>
+        <h2 style = "color: white">Game Settings</h2>
+        <button onclick="setDieAmount()">Set Number for Die</button>
+        <br>
+        <br>
+        <a href = "how to yahtzee.html" target = "_blank" class = "rules" style = "background-color:white; font-size: X-large">Here's How To Play!</a>
+        <br>
+        <br>
+        <a href = "index.html" target = "_self" style = "color:aqua; font-size:x-large">Home</a>
+        <br>
+        <br>
+        <a style = "background-color:blueviolet; color: white; font-size:x-large;" href = "about.html" target = "_blank">About</a>
+    </div>  
+    </div>
+    <h1 class = "yazy">Unnamed Dice Game</h1>
+    <h1 id = "victor" class = "yazy"></h1>
+    <h3 style = "color:red">Player 1</h3>
+    <button onclick="allRole(1)">Roll All For Player 1</button>
+        <div>
+        <button onclick="setDie(1)">Die 1</button>
+        <button onclick="setDie(2)">Die 2</button>
+        <button onclick="setDie(3)">Die 3</button>
+        <button onclick="setDie(4)">Die 4</button>
+        <button onclick="setDie(5)">Die 5</button>
+        <button>Player 1 Total</button>
+        
+    </div>
+    <div>
+        <button id = 1 class="dice_output">output</button>
+        <button id = 2 class="dice_output">output</button> 
+        <button id = 3 class="dice_output">output</button> 
+        <button id = 4 class="dice_output">output</button> 
+        <button id = 5 class="dice_output">output</button>
+        <button id = "P1total" class = "dice_output">Total</button>
+    </div>
+    <h3 style = "color:blue">Player 2</h3>
+    <button onclick="allRole(2)">Roll All For Player 2</button>
+    <div>
+        <button onclick="setDie(6)">Die 1</button>
+        <button onclick="setDie(7)">Die 2</button>
+        <button onclick="setDie(8)">Die 3</button>
+        <button onclick="setDie(9)">Die 4</button>
+        <button onclick="setDie(10)">Die 5</button>
+        <button>Player 2 Total</button>
+    </div>
+    <div>
+        <button id = 6 class="dice_output">output</button>
+        <button id = 7 class="dice_output">output</button> 
+        <button id = 8 class="dice_output">output</button> 
+        <button id = 9 class="dice_output">output</button> 
+        <button id = 10 class="dice_output">output</button>
+        <button id = "P2total" class = "dice_output">Total</button>
+    </div>
+    <br>
+</body>
+</html>
+
